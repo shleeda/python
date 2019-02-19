@@ -5,7 +5,7 @@ import pymysql
 import pandas as pd
 
 def result_insert(uid,df,table):
-    db = pymysql.connect(host='192.168.0.102', user='lod_ui', password='lod!@',db='health_care_ui')
+    db = pymysql.connect(host='*.*.*.*', user='***', password='****',db='****')
     cur = db.cursor()
 
     year_df = pd.read_sql("select yearName from tr_dataset_year where dataSetUID ="+uid+";",db)
